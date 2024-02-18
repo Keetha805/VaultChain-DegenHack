@@ -1,6 +1,28 @@
 {
+  "name": "hardhat-project",
+  "version": "1.0.0",
+  "description": "A Hardhat project",
+  "scripts": {
+    "test": "yarn hardhat test",
+    "compile": "yarn hardhat compile",
+    "node": "yarn hardhat node",
+    "console": "yarn hardhat console",
+    "accounts": "yarn hardhat accounts",
+    "clean": "yarn hardhat clean",
+    "run": "yarn hardhat run",
+    "deploy": "yarn hardhat run scripts/deploy.js"
+  },
   "devDependencies": {
+    "@nomicfoundation/hardhat-ethers": "^3.0.5",
     "@nomicfoundation/hardhat-toolbox": "^4.0.0",
-    "hardhat": "^2.20.0"
+    "@openzeppelin/hardhat-upgrades": "^3.0.3",
+    "ethers": "^6.11.1",
+    "hardhat": "^2.20.1"
+  },
+  "dependencies": {
+    "@fuseio/fusebox-web-sdk": "^0.2.7",
+    "@openzeppelin/contracts": "^5.0.1",
+    "dotenv": "^16.4.4",
+    "viem": "^2.7.10"
   }
 }
